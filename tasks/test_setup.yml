@@ -1,0 +1,7 @@
+---
+- name: Test Setup Module
+  hosts: all
+  become: true
+  tasks:
+    - name: Gather facts
+      ansible.builtin.setup:
